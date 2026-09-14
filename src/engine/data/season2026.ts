@@ -1,0 +1,75 @@
+// Real-world context entering the 2026/27 season (as best known): last season's finishing orders,
+// cup winners and continental holders. Used only to seed the first season's qualification & super cups.
+
+export const LAST_SEASON_ORDER: Record<string, string[]> = {
+  ENG1: ['Arsenal', 'Manchester City', 'Manchester United', 'Aston Villa', 'Liverpool', 'Chelsea', 'Brentford', 'Everton', 'Fulham', 'Bournemouth', 'Tottenham Hotspur', 'Newcastle United', 'Crystal Palace', 'Brighton & Hove Albion', 'Nottingham Forest', 'Sunderland', 'Leeds United', 'West Ham United', 'Burnley', 'Wolverhampton Wanderers'],
+  ESP1: ['FC Barcelona', 'Real Madrid', 'Atlético Madrid', 'Villarreal', 'Athletic Club', 'Real Betis', 'Real Sociedad', 'Celta Vigo', 'Sevilla', 'Valencia', 'Osasuna', 'Rayo Vallecano', 'Getafe', 'Espanyol', 'Deportivo Alavés', 'Elche', 'Levante', 'RCD Mallorca', 'Girona', 'Real Oviedo'],
+  GER1: ['Bayern München', 'Borussia Dortmund', 'Bayer Leverkusen', 'Eintracht Frankfurt', 'VfB Stuttgart', 'RB Leipzig', 'SC Freiburg', 'Borussia Mönchengladbach', 'Werder Bremen', 'Mainz 05', 'TSG Hoffenheim', 'Union Berlin', 'FC Augsburg', '1. FC Köln', 'Hamburger SV', 'VfL Wolfsburg', '1. FC Heidenheim', 'FC St. Pauli'],
+  ITA1: ['Inter', 'AC Milan', 'Napoli', 'Roma', 'Como', 'Juventus', 'Atalanta', 'Sassuolo', 'Bologna', 'Lazio', 'Fiorentina', 'Torino', 'Udinese', 'Genoa', 'Cagliari', 'Parma', 'Lecce', 'Cremonese', 'Hellas Verona', 'Pisa'],
+  FRA1: ['Paris Saint-Germain', 'Olympique de Marseille', 'AS Monaco', 'Olympique Lyonnais', 'Lille OSC', 'RC Strasbourg', 'RC Lens', 'Stade Rennais', 'OGC Nice', 'Toulouse FC', 'Stade Brestois', 'AJ Auxerre', 'Paris FC', 'Le Havre AC', 'FC Lorient', 'Angers SCO', 'FC Nantes', 'FC Metz'],
+};
+
+export const LAST_SEASON_CUPS: Record<string, { winner: string; finalist: string }> = {
+  ENG_FAC: { winner: 'Manchester City', finalist: 'Crystal Palace' },
+  ENG_EFL: { winner: 'Liverpool', finalist: 'Arsenal' },
+  ESP_CDR: { winner: 'Real Sociedad', finalist: 'Atlético Madrid' },
+  GER_POK: { winner: 'Bayer Leverkusen', finalist: 'VfB Stuttgart' },
+  ITA_CIT: { winner: 'Napoli', finalist: 'Juventus' },
+  FRA_CDF: { winner: 'Olympique de Marseille', finalist: 'Lille OSC' },
+};
+
+export const LAST_SEASON_EURO: Record<string, { winner: string; finalist: string }> = {
+  UCL: { winner: 'Paris Saint-Germain', finalist: 'Arsenal' },
+  UEL: { winner: 'Aston Villa', finalist: 'Roma' },
+  UECL: { winner: 'Crystal Palace', finalist: 'Fiorentina' },
+};
+
+/** Ordering of other-nation leagues last season (top clubs), used for first-season European qualification. */
+export const LAST_SEASON_OTHER: Record<string, string[]> = {
+  NED1: ['PSV Eindhoven', 'Ajax', 'Feyenoord', 'AZ Alkmaar', 'FC Utrecht', 'FC Twente'],
+  POR1: ['Sporting CP', 'Benfica', 'FC Porto', 'SC Braga', 'Vitória SC', 'Famalicão'],
+  BEL1: ['Union Saint-Gilloise', 'Club Brugge', 'KRC Genk', 'Anderlecht', 'KAA Gent', 'Royal Antwerp'],
+  TUR1: ['Galatasaray', 'Fenerbahçe', 'Beşiktaş', 'Trabzonspor', 'Samsunspor', 'Başakşehir'],
+  SCO1: ['Celtic', 'Rangers', 'Aberdeen', 'Heart of Midlothian', 'Hibernian'],
+  CZE1: ['Slavia Praha', 'Sparta Praha', 'Viktoria Plzeň', 'Baník Ostrava'],
+  GRE1: ['Olympiacos', 'PAOK', 'AEK Athens', 'Panathinaikos'],
+  AUT1: ['Red Bull Salzburg', 'Sturm Graz', 'Rapid Wien', 'LASK', 'Austria Wien', 'Wolfsberger AC'],
+  SUI1: ['FC Basel', 'Young Boys', 'Servette', 'FC Lugano', 'FC Zürich'],
+  UKR1: ['Shakhtar Donetsk', 'Dynamo Kyiv'],
+  DEN1: ['FC København', 'FC Midtjylland', 'Brøndby', 'AGF Aarhus'],
+  NOR1: ['FK Bodø/Glimt', 'SK Brann', 'Viking FK', 'Molde', 'Rosenborg'],
+  SWE1: ['Malmö FF', 'Djurgården', 'Hammarby'],
+  CRO1: ['Dinamo Zagreb', 'HNK Rijeka', 'Hajduk Split'],
+  SRB1: ['Crvena zvezda', 'Partizan'],
+  POL1: ['Lech Poznań', 'Legia Warszawa', 'Raków Częstochowa', 'Jagiellonia'],
+  ISR1: ['Maccabi Tel Aviv', 'Maccabi Haifa'],
+  CYP1: ['Pafos FC', 'APOEL', 'Omonia'],
+  HUN1: ['Ferencváros'],
+  ROU1: ['FCSB', 'Universitatea Craiova', 'CFR Cluj'],
+  BUL1: ['Ludogorets'],
+  SVK1: ['Slovan Bratislava'],
+  AZE1: ['Qarabağ'],
+  KAZ1: ['Kairat Almaty', 'FC Astana'],
+  SVN1: ['NK Celje', 'Olimpija Ljubljana'],
+  IRL1: ['Shamrock Rovers'],
+  WAL1: ['The New Saints'],
+  NIR1: ['Linfield', 'Larne'],
+  BIH1: ['HŠK Zrinjski', 'Sarajevo'],
+  GIB1: ['Lincoln Red Imps'],
+  KOS1: ['FC Drita', 'KF Ballkani'],
+  EST1: ['FCI Levadia', 'Flora Tallinn'],
+  LVA1: ['RFS', 'Riga FC'],
+  LTU1: ['Žalgiris'],
+  FIN1: ['HJK Helsinki'],
+  ISL1: ['Víkingur Reykjavík', 'Breiðablik'],
+  FRO1: ['KÍ Klaksvík'],
+  MKD1: ['Shkëndija'],
+  ALB1: ['FK Egnatia', 'Vllaznia'],
+  ARM1: ['FC Noah', 'Ararat-Armenia', 'Pyunik'],
+  MDA1: ['Petrocub Hîncești', 'Sheriff Tiraspol'],
+  BLR1: ['Dinamo Minsk'],
+  LUX1: ['F91 Diddeleng'],
+  MLT1: ['Ħamrun Spartans'],
+  GEO1: ['Dinamo Tbilisi'],
+  MNE1: ['Budućnost Podgorica'],
+};

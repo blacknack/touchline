@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Touchline Manager",
+  "version": "1.0.0",
+  "identifier": "com.nacho.touchline",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:5173",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Touchline Manager",
+        "width": 1400,
+        "height": 900,
+        "minWidth": 960,
+        "minHeight": 640,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": { "csp": null }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/icon.png"],
+    "macOS": { "minimumSystemVersion": "12.0" }
+  }
+}

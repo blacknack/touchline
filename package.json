@@ -1,0 +1,33 @@
+{
+  "name": "touchline-manager",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "sim": "tsx scripts/calibrate.ts",
+    "build:single": "vite build --config vite.single.config.ts",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "idb-keyval": "^6.2.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.4",
+    "@types/node": "^26.4.1",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "playwright": "^1.62.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.3",
+    "vite-plugin-singlefile": "^2.0.2"
+  }
+}
