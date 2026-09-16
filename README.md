@@ -50,7 +50,7 @@ Everything is plain TypeScript in `src/engine/data/`:
 - `clubs_extra.ts` — clubs with generated squads (lower divisions + smaller UEFA nations).
 - `season2026.ts` — last season's standings, cup winners and holders that seed the first season.
 
-Squads reflect my best knowledge as of the 2026/27 pre-season; some transfers from January/summer 2026 will be missing or wrong — fix them in the files above, save, and start a new career. Add a club by copying an existing entry (its `short` code should be unique within the nation).
+Squads reflect the close of the summer 2026 transfer window (1 September 2026), reconciled against Wikipedia's transfer lists and club squad pages; ratings for players new to the data are estimates. Some moves may still be missing or wrong — fix them in the files above, save, and start a new career. Add a club by copying an existing entry (its `short` code should be unique within the nation).
 
 ## Headless tools
 
